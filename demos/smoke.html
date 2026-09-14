@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Gestalt Phase A — smoke demo</title>
+  <style>
+    html, body { margin: 0; padding: 0; background: #1a1a1a; color: #eee; font-family: system-ui, sans-serif; }
+    main { padding: 1.5rem; }
+    h1 { font-size: 1.1rem; font-weight: 600; margin: 0 0 0.75rem; }
+    p { opacity: 0.75; font-size: 0.9rem; margin: 0 0 1rem; }
+    gs-sketch { display: block; border-radius: 8px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,.45); }
+  </style>
+  <!-- Dev: Vite transforms TS entry. Production: use /dist/gestalt.js after build. -->
+  <script type="module" src="/src/index.ts"></script>
+</head>
+<body>
+<main>
+  <h1>@tangentcode/gestalt — markup anim smoke</h1>
+  <p>
+    Same pattern as platform <code>creature.gsd</code>:
+    <code>&lt;gs-sketch play="…"&gt;</code> + <code>&lt;gs-defs&gt;/&lt;gs-anim&gt;/&lt;gs-track&gt;</code>.
+    No ToolApp / editor.
+  </p>
+
+  <gs-sketch name="smoke" bg="#222" width="480" height="280" play="bounce">
+    <gs-rect id="box" x="40" y="100" w="64" h="64" fc="#4fc3f7" sc="#0288d1"></gs-rect>
+    <gs-circle id="dot" cx="320" cy="140" r="28" fc="#ff8a65" sc="#e64a19"></gs-circle>
+    <gs-defs>
+      <gs-anim name="bounce" dur="3" rep="0">
+        <gs-track for="box" prop="x">0:40; 1.5:360; 3:40</gs-track>
+        <gs-track for="box" prop="y">0:100; 0.75:40; 1.5:100; 2.25:40; 3:100</gs-track>
+        <gs-track for="dot" prop="r">0:28; 1.5:48; 3:28</gs-track>
+        <gs-track for="dot" prop="cx">0:320; 1.5:120; 3:320</gs-track>
+      </gs-anim>
+    </gs-defs>
+  </gs-sketch>
+</main>
+</body>
+</html>

@@ -1,0 +1,53 @@
+{
+  "name": "@tangentcode/gestalt",
+  "version": "0.1.0",
+  "description": "Gestalt / GameSketchLib player — markup-driven SVG sketches and animations (Custom Elements).",
+  "license": "MIT",
+  "author": "tangentcode",
+  "type": "module",
+  "main": "./dist/gestalt.js",
+  "module": "./dist/gestalt.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/gestalt.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "sideEffects": [
+    "./dist/gestalt.js",
+    "./src/**/*.ts",
+    "./src/**/*.mts"
+  ],
+  "scripts": {
+    "build": "vite build && tsc -p tsconfig.build.json --emitDeclarationOnly --noCheck",
+    "dev": "vite",
+    "preview": "vite preview",
+    "pack:check": "npm pack --dry-run"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  },
+  "keywords": [
+    "gestalt",
+    "gamesketchlib",
+    "svg",
+    "animation",
+    "custom-elements",
+    "web-components"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tangentcode/gestalt.git"
+  },
+  "homepage": "https://github.com/tangentcode/gestalt",
+  "bugs": {
+    "url": "https://github.com/tangentcode/gestalt/issues"
+  }
+}

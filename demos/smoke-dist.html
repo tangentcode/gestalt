@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Gestalt — smoke (dist)</title>
+  <style>
+    html, body { margin: 0; padding: 1.5rem; background: #1a1a1a; color: #eee; font-family: system-ui, sans-serif; }
+    gs-sketch { display: block; border-radius: 8px; overflow: hidden; }
+  </style>
+  <script type="module" src="../dist/gestalt.js"></script>
+</head>
+<body>
+  <gs-sketch name="smoke" bg="#222" width="480" height="280" play="bounce">
+    <gs-rect id="box" x="40" y="100" w="64" h="64" fc="#4fc3f7" sc="#0288d1"></gs-rect>
+    <gs-circle id="dot" cx="320" cy="140" r="28" fc="#ff8a65" sc="#e64a19"></gs-circle>
+    <gs-defs>
+      <gs-anim name="bounce" dur="3" rep="0">
+        <gs-track for="box" prop="x">0:40; 1.5:360; 3:40</gs-track>
+        <gs-track for="box" prop="y">0:100; 0.75:40; 1.5:100; 2.25:40; 3:100</gs-track>
+        <gs-track for="dot" prop="r">0:28; 1.5:48; 3:28</gs-track>
+        <gs-track for="dot" prop="cx">0:320; 1.5:120; 3:320</gs-track>
+      </gs-anim>
+    </gs-defs>
+  </gs-sketch>
+</body>
+</html>
