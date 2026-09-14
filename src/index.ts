@@ -1,5 +1,5 @@
 /**
- * @tangentcode/gestalt — player entry (Phase A)
+ * @tangentstorm/gestalt — player entry (Phase A)
  *
  * Registers Custom Elements for markup-driven SVG sketches + animations.
  * Does NOT include GsToolApp, editor tools/panels, tc-anim-bar/timeline, or treeLayout.

@@ -1,4 +1,4 @@
-# @tangentcode/gestalt
+# @tangentstorm/gestalt
 
 **Gestalt** (GameSketchLib web player) — MIT-licensed SVG sketch + **markup animation** runtime as Custom Elements.
 
@@ -11,12 +11,12 @@ This package is the **player-only** extract from the private `tangentcode/platfo
 | Geometry shapes (`gs-rect`, `gs-circle`, …) | `tc-anim-bar` / `tc-timeline` |
 | Vendored `sh` helpers | `treeLayout`, importers, PTW, extras |
 
-Package: **`@tangentcode/gestalt`** · Repo: [tangentcode/gestalt](https://github.com/tangentcode/gestalt)
+Package: **`@tangentstorm/gestalt`** · Repo: [tangentcode/gestalt](https://github.com/tangentcode/gestalt)
 
 ## Install
 
 ```bash
-npm install @tangentcode/gestalt
+npm install @tangentstorm/gestalt
 ```
 
 (Or link a local build: `npm pack` → install the `.tgz`.)
@@ -24,7 +24,7 @@ npm install @tangentcode/gestalt
 ## Quick start (markup playback)
 
 ```html
-<script type="module" src="node_modules/@tangentcode/gestalt/dist/gestalt.js"></script>
+<script type="module" src="node_modules/@tangentstorm/gestalt/dist/gestalt.js"></script>
 
 <gs-sketch bg="#222" width="480" height="280" play="bounce">
   <gs-rect id="box" x="40" y="100" w="64" h="64" fc="#4fc3f7"></gs-rect>

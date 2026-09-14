@@ -1,5 +1,5 @@
 {
-  "name": "@tangentcode/gestalt",
+  "name": "@tangentstorm/gestalt",
   "version": "0.1.0",
   "description": "Gestalt / GameSketchLib player — markup-driven SVG sketches and animations (Custom Elements).",
   "license": "MIT",

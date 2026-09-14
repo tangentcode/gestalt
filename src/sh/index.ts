@@ -1,5 +1,5 @@
 /**
- * Vendored subset of platform web/js/sh.mts for @tangentcode/gestalt.
+ * Vendored subset of platform web/js/sh.mts for @tangentstorm/gestalt.
  * Only the helpers used by the player (sketch + anim stack).
  */
 
